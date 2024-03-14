@@ -1,0 +1,49 @@
+{
+    "name": "jgu/bookable",
+    "description": "Bookings package for laravel",
+    "license": "license",
+    "authors": [
+        {
+            "name": "Karan Kumar",
+            "email": "karankumar@jgu.edu.in",
+            "homepage": "https://jgu.edu.in"
+        }
+    ],
+    "homepage": "https://github.com/jgu/bookable",
+    "keywords": ["Laravel", "Bookable"],
+    "require": {
+        "illuminate/support": "^9.52",
+        "yajra/laravel-auditable": "^4.6",
+        "nesbot/carbon": "^2.72"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.41",
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jgu\\Bookable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jgu\\Bookable\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jgu\\Bookable\\BookableServiceProvider"
+            ],
+            "aliases": {
+                "Bookable": "Jgu\\Bookable\\Facades\\Bookable"
+            }
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:jgu-it/workflow_approvals.git"
+        }
+    ]
+}
